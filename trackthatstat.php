@@ -17,7 +17,7 @@ if ( ! defined( 'WP_PLUGIN_URL' ) )
 if ( ! defined( 'WP_PLUGIN_DIR' ) )
       define( 'WP_PLUGIN_DIR', WP_CONTENT_DIR.'/plugins' );
 if ( ! defined('TRACK_PLUGIN_NAME'))
-	 define( 'TRACK_PLUGIN_NAME', 'track-that-stat' );
+	 define( 'TRACK_PLUGIN_NAME', 'trackthatstat' );
 
 include("stats.php");
 include("referrer_stats.php");
