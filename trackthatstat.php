@@ -17,7 +17,7 @@ if ( ! defined( 'WP_PLUGIN_URL' ) )
 if ( ! defined( 'WP_PLUGIN_DIR' ) )
       define( 'WP_PLUGIN_DIR', WP_CONTENT_DIR.'/plugins' );
 if ( ! defined('TRACK_PLUGIN_NAME'))
-	 define( 'TRACK_PLUGIN_NAME', 'trackthatstat' );
+	 define( 'TRACK_PLUGIN_NAME', 'track-that-stat' );
 
 include("stats.php");
 include("referrer_stats.php");
@@ -218,14 +218,14 @@ if (! class_exists('TrafficstatsPlugin')) {
         <div class="header_right">
         	<div class="menu_bg">
             	<ul class="menu">
-                	<li><a <?php echo($_REQUEST['details'] == "referral" ? 'class="active"' : '');?> href="admin.php?page=<?php echo(TRACK_PLUGIN_NAME);?>&details=referral">Referrals</a></li>
-                    <li><a <?php echo($_REQUEST['details'] == "keyword" ? 'class="active"' : '');?> href="admin.php?page=<?php echo(TRACK_PLUGIN_NAME);?>&details=keyword">Keywords</a></li>
-                    <li><a <?php echo($_REQUEST['details'] == "page" ? 'class="active"' : '');?> href="admin.php?page=<?php echo(TRACK_PLUGIN_NAME);?>&details=page">Content Viewed</a></li>
-                    <li><a <?php echo($_REQUEST['details'] == "visitor" ? 'class="active"' : '');?> href="admin.php?page=<?php echo(TRACK_PLUGIN_NAME);?>&details=visitor">Visitor Details</a></li>
+                	<li><a <?php echo($_REQUEST['details'] == "referral" ? 'class="active"' : '');?> href="1.0/admin.php?page=<?php echo(TRACK_PLUGIN_NAME);?>&amp;details=referral">Referrals</a></li>
+                    <li><a <?php echo($_REQUEST['details'] == "keyword" ? 'class="active"' : '');?> href="1.0/admin.php?page=<?php echo(TRACK_PLUGIN_NAME);?>&amp;details=keyword">Keywords</a></li>
+                    <li><a <?php echo($_REQUEST['details'] == "page" ? 'class="active"' : '');?> href="1.0/admin.php?page=<?php echo(TRACK_PLUGIN_NAME);?>&amp;details=page">Content Viewed</a></li>
+                    <li><a <?php echo($_REQUEST['details'] == "visitor" ? 'class="active"' : '');?> href="1.0/admin.php?page=<?php echo(TRACK_PLUGIN_NAME);?>&amp;details=visitor">Visitor Details</a></li>
                     <?php
 						if(isset($_REQUEST['details'])) {
 					?>
-						<li><a href="admin.php?page=<?php echo(TRACK_PLUGIN_NAME);?>">Main</a></li>
+						<li><a href="1.0/admin.php?page=<?php echo(TRACK_PLUGIN_NAME);?>">Main</a></li>
 					<?php
 						}
 					?>
