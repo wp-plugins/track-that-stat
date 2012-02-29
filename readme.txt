@@ -4,7 +4,7 @@ Donate link: http://trackthatstat.org
 Tags: traffic, stats, analytics, admin, geolocation, seo, dashboard, online users, monitor, chart, details, ajax, browser, useragents, visits, visitors, statistics, tracking, track, css, php, mysql, userfriendly
 Requires at least: 3.0 
 Tested up to: 3.3.1
-Stable tag: 1.0
+Stable tag: trunk
 
 View all of your traffic in real time. Analyze your visitors, search engine terms, referral traffic and more with our
 userfriendly interface. 
